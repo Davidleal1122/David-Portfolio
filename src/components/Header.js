@@ -11,7 +11,13 @@ const Header = () => {
         <div className='flex justify-between items-center'>
           {/* Logo */}
           <a href='#banner'>
-            <img src={Logo} alt='Logo' />
+            <img
+              src={Logo}
+              alt='Logo'
+              width="150" // Replace with actual width
+              height="50"  // Replace with actual height
+              loading="lazy"
+            />
           </a>
           {/* Work with me Button */}
           <Link
