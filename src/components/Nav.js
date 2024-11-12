@@ -17,8 +17,8 @@ const Nav = () => {
             smooth={true}
             spy={true}
             offset={-200}
-            href='#home' // Added href for crawlability
             className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center bg-transparent hover:bg-white/20 rounded-full transition duration-300'
+            aria-label="Go to Home"
           >
             <BiHomeAlt />
           </Link>
@@ -28,8 +28,8 @@ const Nav = () => {
             smooth={true}
             spy={true}
             offset={20}
-            href='#about' // Added href for crawlability
             className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center bg-transparent hover:bg-white/20 rounded-full transition duration-300'
+            aria-label="Go to About"
           >
             <BsClipboardData />
           </Link>
@@ -39,8 +39,8 @@ const Nav = () => {
             smooth={true}
             spy={true}
             offset={-40}
-            href='#work' // Added href for crawlability
             className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center bg-transparent hover:bg-white/20 rounded-full transition duration-300'
+            aria-label="Go to Work"
           >
             <BsBriefcase />
           </Link>
@@ -50,8 +50,8 @@ const Nav = () => {
             smooth={true}
             spy={true}
             offset={20}
-            href='#contact' // Added href for crawlability
             className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center bg-transparent hover:bg-white/20 rounded-full transition duration-300'
+            aria-label="Go to Contact"
           >
             <BsChatSquareText />
           </Link>

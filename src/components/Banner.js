@@ -4,11 +4,11 @@ import Images from '../assets/main.svg';
 // Icons
 import { FaGithub, FaInstagram, FaFacebook } from 'react-icons/fa';
 // type animation
-import { TypeAnimation, Typeanimation } from 'react-type-animation';
+import { TypeAnimation } from 'react-type-animation';
 // motion
 import { motion } from 'framer-motion';
 //variants
-import { fadeIn } from '../variants'
+import { fadeIn } from '../variants';
 //CV
 import curriculumVitae from '../assets/curriculumVitae.pdf';
 
@@ -80,13 +80,13 @@ const Banner = () => {
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-              <a href="https://github.com/Davidleal1122">
+              <a href="https://github.com/Davidleal1122" aria-label="GitHub Profile">
                 <FaGithub />
               </a>
-              <a href="https://www.facebook.com/daveleal1122">
+              <a href="https://www.facebook.com/daveleal1122" aria-label="Facebook Profile">
                 <FaFacebook />
               </a>
-              <a href="https://www.instagram.com/dvrbtml/">
+              <a href="https://www.instagram.com/dvrbtml/" aria-label="Instagram Profile">
                 <FaInstagram />
               </a>
             </motion.div>
