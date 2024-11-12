@@ -1,73 +1,9 @@
 import React from 'react';
-//motion
+// Import only specific animations from framer-motion if possible
 import { motion } from 'framer-motion';
-//variants
 import { fadeIn } from '../variants';
-//img
-import Img1 from '../assets/Kinaiya E-commerce.webp';
-import Img2 from '../assets/biteLite.webp';
-import Img3 from '../assets/checklist.webp';
 
-// Define projects as a Map
-const projects = new Map([
-  [
-    "01",
-    {
-      num: "01",
-      category: "Ecommerce",
-      title: "Kinaiya-Ecommerce",
-      description:
-        "Kinaiya, the project application, is a static Java application for E-commerce. A user-friendly visual experience builder for Java applications is provided by software with the GUI. It mainly comprises graphical elements that enable the user to interact with software.",
-      stack: [
-        {
-          name: "Java Swing",
-        }
-      ],
-      image: Img1,
-      live: "https://github.com/Davidleal1122/Kinaiya-Ecommerce",
-    },
-  ],
-  [
-    "02",
-    {
-      num: "02",
-      category: "Database",
-      title: "BiteLite Dental Clinic Appointment System",
-      description: "The project application, is a streamlined appointment management system focused on database development for dental clinics. Designed to optimize clinic operations, it provides an intuitive interface for managing patient, appointment, dentist, and treatment records. By leveraging efficient database structures, DentAssist minimizes record discrepancies and scheduling conflicts, enhancing overall workflow and operational efficiency.",
-      stack: [
-        {
-          name: "MySQL, Java Swing",
-        },
-        {
-          name: "Java Swing",
-        },
-      ],
-      image: Img2,
-      live: "https://github.com/Davidleal1122/BiteLite-Dental-Clinic-Appointment-System",
-    },
-  ],
-  [
-    "03",
-    {
-      num: "03",
-      category: "Website",
-      title: "Student Checklist Portal",
-      description: "The Student Checklist Portal offers a clear view of enrolled subjects and completed grades. With a user-friendly interface and search feature, students can easily track academic progress and access records across their courses.",
-      stack: [
-        {
-          name: "PHP",
-        },
-        {
-          name: "CSS Bootstrap",
-        },
-      ],
-      image: Img3,
-      live: "https://github.com/Davidleal1122/Student-Checklist-Portal",
-    },
-  ],
-]);
-
-const Work = () => {
+const Work = ({ projects }) => {
   return (
     <section className="section" id="work">
       <div className="container mx-auto">
@@ -98,31 +34,10 @@ const Work = () => {
                 View all projects
               </a>
             </div>
-            {/* image */}
-            <a href={projects.get("01").live} target="_blank" rel="noopener noreferrer">
-              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-                {/* overlay */}
-                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
-                {/* image */}
-                <img
-                  className="group-hover:scale-125 transition-all duration-500"
-                  src={projects.get("01").image}
-                  alt={projects.get("01").title}
-                  loading="lazy"
-                  width="400" // Adjusted width
-                  height="300" // Adjusted height
-                />
-                {/* pretitle */}
-                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                  <span className="text-gradient">{projects.get("01").stack[0].name}</span>
-                </div>
-                {/* title */}
-                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                  <span className="text-3xl text-white">{projects.get("01").title}</span>
-                </div>
-              </div>
-            </a>
+            {/* Display the first project */}
+            <ProjectDisplay project={projects.get("01")} />
           </motion.div>
+
           <motion.div
             variants={fadeIn("left", 0.2)}
             initial="hidden"
@@ -130,59 +45,41 @@ const Work = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1 flex flex-col gap-y-7"
           >
-            {/* image */}
-            <a href={projects.get("02").live} target="_blank" rel="noopener noreferrer">
-              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-                {/* overlay */}
-                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
-                {/* image */}
-                <img
-                  className="group-hover:scale-125 transition-all duration-500"
-                  src={projects.get("02").image}
-                  alt={projects.get("02").title}
-                  loading="lazy"
-                  width="400" // Adjusted width
-                  height="300" // Adjusted height
-                />
-                {/* pretitle */}
-                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                  <span className="text-gradient">{projects.get("02").stack[0].name}</span>
-                </div>
-                {/* title */}
-                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                  <span className="text-3xl text-white">{projects.get("02").title}</span>
-                </div>
-              </div>
-            </a>
-            {/* image */}
-            <a href={projects.get("03").live} target="_blank" rel="noopener noreferrer">
-              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-                {/* overlay */}
-                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
-                {/* image */}
-                <img
-                  className="group-hover:scale-125 transition-all duration-500"
-                  src={projects.get("03").image}
-                  alt={projects.get("03").title}
-                  loading="lazy"
-                  width="400" // Adjusted width
-                  height="300" // Adjusted height
-                />
-                {/* pretitle */}
-                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                  <span className="text-gradient">{projects.get("03").stack[0].name}</span>
-                </div>
-                {/* title */}
-                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                  <span className="text-3xl text-white">{projects.get("03").title}</span>
-                </div>
-              </div>
-            </a>
+            {/* Display the second and third projects */}
+            <ProjectDisplay project={projects.get("02")} />
+            <ProjectDisplay project={projects.get("03")} />
           </motion.div>
         </div>
       </div>
     </section>
   );
 };
+
+// Separate ProjectDisplay component to reduce code repetition
+const ProjectDisplay = ({ project }) => (
+  <a href={project.live} target="_blank" rel="noopener noreferrer">
+    <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+      {/* overlay */}
+      <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+      {/* image */}
+      <img
+        className="group-hover:scale-125 transition-all duration-500"
+        src={project.image}
+        alt={project.title}
+        loading="lazy"
+        width="800" // Adjust based on actual image dimensions
+        height="600"
+      />
+      {/* pretitle */}
+      <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+        <span className="text-gradient">{project.stack[0].name}</span>
+      </div>
+      {/* title */}
+      <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+        <span className="text-3xl text-white">{project.title}</span>
+      </div>
+    </div>
+  </a>
+);
 
 export default Work;
