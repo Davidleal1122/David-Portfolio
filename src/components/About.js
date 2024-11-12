@@ -26,6 +26,7 @@ const About = () => {
             whileInView="show"
             viewport={{ once: false, amount: 0.3 }}
             className='hidden lg:flex flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend…" style="opacity: 0; transform: translateX(-80px) translateY(0px) translateZ(0px);'
+            loading="lazy"
           ></motion.div>
 
           {/* Text */}

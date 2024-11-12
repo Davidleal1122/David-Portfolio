@@ -120,7 +120,9 @@ const Banner = () => {
             initial='hidden'
             whileInView={'show'}
             className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'>
-            <img src={Images} alt='main' />
+            <img src={Images} 
+            alt='main' 
+            loading='lazy'/>
           </motion.div>
         </div>
       </div>
