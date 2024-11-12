@@ -1,7 +1,7 @@
 import React from 'react';
-// images
+// Images
 import Logo from '../assets/logo.svg';
-// import Link from react-scroll
+// Import Link from react-scroll
 import { Link } from 'react-scroll';
 
 const Header = () => {
@@ -15,8 +15,8 @@ const Header = () => {
           </a>
           {/* Work with me Button */}
           <Link
-            href='#contact'
             to='contact'
+            href='#contact' // Added href for crawlability
             smooth={true}
             spy={true}
             offset={-80} // Optional: adjust offset if needed
