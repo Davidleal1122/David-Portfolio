@@ -80,13 +80,13 @@ const Banner = () => {
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-              <a href="https://github.com/Davidleal1122" aria-label="GitHub Profile">
+              <a href="https://github.com/Davidleal1122" aria-label="GitHub">
                 <FaGithub />
               </a>
-              <a href="https://www.facebook.com/daveleal1122" aria-label="Facebook Profile">
+              <a href="https://www.facebook.com/daveleal1122" aria-label="Facebook">
                 <FaFacebook />
               </a>
-              <a href="https://www.instagram.com/dvrbtml/" aria-label="Instagram Profile">
+              <a href="https://www.instagram.com/dvrbtml/" aria-label="Instagram">
                 <FaInstagram />
               </a>
             </motion.div>
