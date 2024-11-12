@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 //variants
 import { fadeIn } from '../variants';
 //img
-import Img1 from '../assets/portfolio-img1.png';
-import Img2 from '../assets/portfolio-img2.png';
-import Img3 from '../assets/portfolio-img3.png';
+import Img1 from '../assets/portfolio-img1.webp';
+import Img2 from '../assets/portfolio-img2.webp';
+import Img3 from '../assets/portfolio-img3.webp';
 
 // Define projects as a Map
 const projects = new Map([
