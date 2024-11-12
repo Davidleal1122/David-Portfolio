@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 //variants
 import { fadeIn } from '../variants';
 //img
-import Img1 from '../assets/portfolio-img1.webp';
-import Img2 from '../assets/portfolio-img2.webp';
-import Img3 from '../assets/portfolio-img3.webp';
-
+import Img1 from '../assets/Kinaiya E-commerce.webp';
+import Img2 from '../assets/biteLite.webp';
+import Img3 from '../assets/checklist.webp';
+  
 // Define projects as a Map
 const projects = new Map([
   [
@@ -97,7 +97,6 @@ const Work = () => {
               >
                 View all projects
               </a>
-
             </div>
             {/* image */}
             <a href={projects.get("01").live} target="_blank" rel="noopener noreferrer">
@@ -107,8 +106,11 @@ const Work = () => {
                 {/* image */}
                 <img
                   className="group-hover:scale-125 transition-all duration-500"
+                  srcSet={`${projects.get("01").image} 500w, ${projects.get("01").image} 1000w`}
+                  sizes="(max-width: 768px) 500px, 1000px"
                   src={projects.get("01").image}
                   alt={projects.get("01").title}
+                  loading="lazy"
                 />
                 {/* pretitle */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
@@ -136,8 +138,11 @@ const Work = () => {
                 {/* image */}
                 <img
                   className="group-hover:scale-125 transition-all duration-500"
+                  srcSet={`${projects.get("02").image} 500w, ${projects.get("02").image} 1000w`}
+                  sizes="(max-width: 768px) 500px, 1000px"
                   src={projects.get("02").image}
                   alt={projects.get("02").title}
+                  loading="lazy"
                 />
                 {/* pretitle */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
@@ -157,8 +162,11 @@ const Work = () => {
                 {/* image */}
                 <img
                   className="group-hover:scale-125 transition-all duration-500"
+                  srcSet={`${projects.get("03").image} 500w, ${projects.get("03").image} 1000w`}
+                  sizes="(max-width: 768px) 500px, 1000px"
                   src={projects.get("03").image}
                   alt={projects.get("03").title}
+                  loading="lazy"
                 />
                 {/* pretitle */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
