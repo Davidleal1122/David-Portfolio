@@ -106,9 +106,9 @@ const Work = () => {
                 {/* image */}
                 <img
                   className="group-hover:scale-125 transition-all duration-500"
-                  srcSet={`${projects.get("01").image} 500w, ${projects.get("01").image} 1000w`}
-                  sizes="(max-width: 768px) 500px, 1000px"
                   src={projects.get("01").image}
+                  srcSet={`${projects.get("01").image} 400w, ${projects.get("01").image} 800w`}
+                  sizes="(max-width: 600px) 400px, 800px"
                   alt={projects.get("01").title}
                   loading="lazy"
                 />
@@ -138,9 +138,9 @@ const Work = () => {
                 {/* image */}
                 <img
                   className="group-hover:scale-125 transition-all duration-500"
-                  srcSet={`${projects.get("02").image} 500w, ${projects.get("02").image} 1000w`}
-                  sizes="(max-width: 768px) 500px, 1000px"
                   src={projects.get("02").image}
+                  srcSet={`${projects.get("02").image} 400w, ${projects.get("02").image} 800w`}
+                  sizes="(max-width: 600px) 400px, 800px"
                   alt={projects.get("02").title}
                   loading="lazy"
                 />
@@ -162,9 +162,9 @@ const Work = () => {
                 {/* image */}
                 <img
                   className="group-hover:scale-125 transition-all duration-500"
-                  srcSet={`${projects.get("03").image} 500w, ${projects.get("03").image} 1000w`}
-                  sizes="(max-width: 768px) 500px, 1000px"
                   src={projects.get("03").image}
+                  srcSet={`${projects.get("03").image} 400w, ${projects.get("03").image} 800w`}
+                  sizes="(max-width: 600px) 400px, 800px"
                   alt={projects.get("03").title}
                   loading="lazy"
                 />
