@@ -7,7 +7,7 @@ import { fadeIn } from '../variants';
 import Img1 from '../assets/Kinaiya E-commerce.webp';
 import Img2 from '../assets/biteLite.webp';
 import Img3 from '../assets/checklist.webp';
-  
+
 // Define projects as a Map
 const projects = new Map([
   [
@@ -107,10 +107,10 @@ const Work = () => {
                 <img
                   className="group-hover:scale-125 transition-all duration-500"
                   src={projects.get("01").image}
-                  srcSet={`${projects.get("01").image} 400w, ${projects.get("01").image} 800w`}
-                  sizes="(max-width: 600px) 400px, 800px"
                   alt={projects.get("01").title}
                   loading="lazy"
+                  width="800" // Replace with actual width
+                  height="600" // Replace with actual height
                 />
                 {/* pretitle */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
@@ -139,10 +139,10 @@ const Work = () => {
                 <img
                   className="group-hover:scale-125 transition-all duration-500"
                   src={projects.get("02").image}
-                  srcSet={`${projects.get("02").image} 400w, ${projects.get("02").image} 800w`}
-                  sizes="(max-width: 600px) 400px, 800px"
                   alt={projects.get("02").title}
                   loading="lazy"
+                  width="800" // Replace with actual width
+                  height="600" // Replace with actual height
                 />
                 {/* pretitle */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
@@ -163,10 +163,10 @@ const Work = () => {
                 <img
                   className="group-hover:scale-125 transition-all duration-500"
                   src={projects.get("03").image}
-                  srcSet={`${projects.get("03").image} 400w, ${projects.get("03").image} 800w`}
-                  sizes="(max-width: 600px) 400px, 800px"
                   alt={projects.get("03").title}
                   loading="lazy"
+                  width="800" // Replace with actual width
+                  height="600" // Replace with actual height
                 />
                 {/* pretitle */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
