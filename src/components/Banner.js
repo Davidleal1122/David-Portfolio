@@ -8,7 +8,7 @@ import { TypeAnimation, Typeanimation } from 'react-type-animation';
 // motion
 import { motion } from 'framer-motion';
 //variants
-import { fadeIn } from '../variants';
+import { fadeIn } from '../variants'
 //CV
 import curriculumVitae from '../assets/curriculumVitae.pdf';
 
