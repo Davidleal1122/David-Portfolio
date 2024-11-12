@@ -109,8 +109,8 @@ const Work = () => {
                   src={projects.get("01").image}
                   alt={projects.get("01").title}
                   loading="lazy"
-                  width="800" // Replace with actual width
-                  height="600" // Replace with actual height
+                  width="400" // Adjusted width
+                  height="300" // Adjusted height
                 />
                 {/* pretitle */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
@@ -141,8 +141,8 @@ const Work = () => {
                   src={projects.get("02").image}
                   alt={projects.get("02").title}
                   loading="lazy"
-                  width="800" // Replace with actual width
-                  height="600" // Replace with actual height
+                  width="400" // Adjusted width
+                  height="300" // Adjusted height
                 />
                 {/* pretitle */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
@@ -165,8 +165,8 @@ const Work = () => {
                   src={projects.get("03").image}
                   alt={projects.get("03").title}
                   loading="lazy"
-                  width="800" // Replace with actual width
-                  height="600" // Replace with actual height
+                  width="400" // Adjusted width
+                  height="300" // Adjusted height
                 />
                 {/* pretitle */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
