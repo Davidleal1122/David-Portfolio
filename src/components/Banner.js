@@ -7,9 +7,9 @@ import { FaGithub, FaInstagram, FaFacebook, FaTelegram } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
 // motion
 import { motion } from 'framer-motion';
-//variants
+// variants
 import { fadeIn } from '../variants';
-//CV
+// CV
 import curriculumVitae from '../assets/curriculumVitae.pdf';
 
 const Banner = () => {
@@ -122,7 +122,8 @@ const Banner = () => {
             className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'>
             <img src={Images} 
             alt='main' 
-            loading='lazy'/>
+            width="482"
+            height="auto"/>
           </motion.div>
         </div>
       </div>
