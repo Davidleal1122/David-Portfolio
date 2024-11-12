@@ -2,7 +2,7 @@ import React from 'react';
 // images
 import Images from '../assets/main.svg';
 // Icons
-import { FaGithub, FaInstagram, FaFacebook } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaFacebook, FaTelegram } from 'react-icons/fa';
 // type animation
 import { TypeAnimation } from 'react-type-animation';
 // motion
@@ -79,15 +79,38 @@ const Banner = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-              <a href="https://github.com/Davidleal1122" aria-label="GitHub">
+              className='flex text-[20px] gap-x-10 max-w-max mx-auto lg:mx-0'>
+              <a href="https://github.com/Davidleal1122"
+                className='hover:text-accent'
+                aria-label="GitHub"
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 <FaGithub />
               </a>
-              <a href="https://www.facebook.com/daveleal1122" aria-label="Facebook">
+              <a href="https://www.facebook.com/daveleal1122"
+                className='hover:text-accent'
+                aria-label="Facebook"
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 <FaFacebook />
               </a>
-              <a href="https://www.instagram.com/dvrbtml/" aria-label="Instagram">
+              <a href="https://www.instagram.com/dvrbtml/"
+                className='hover:text-accent'
+                aria-label="Instagram"
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 <FaInstagram />
+              </a>
+              <a href="https://t.me/Dvrbtml/"
+                className='hover:text-accent'
+                aria-label="Telegram"
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <FaTelegram />
               </a>
             </motion.div>
           </div>
