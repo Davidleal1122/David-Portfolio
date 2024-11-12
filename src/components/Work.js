@@ -1,9 +1,54 @@
 import React from 'react';
-// Import only specific animations from framer-motion if possible
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
+import Img1 from '../assets/Kinaiya E-commerce.webp';
+import Img2 from '../assets/biteLite.webp';
+import Img3 from '../assets/checklist.webp';
 
-const Work = ({ projects }) => {
+// Define projects data
+const projects = new Map([
+  [
+    "01",
+    {
+      num: "01",
+      category: "Ecommerce",
+      title: "Kinaiya-Ecommerce",
+      description:
+        "Kinaiya, the project application, is a static Java application for E-commerce. A user-friendly visual experience builder for Java applications is provided by software with the GUI. It mainly comprises graphical elements that enable the user to interact with software.",
+      stack: [{ name: "Java Swing" }],
+      image: Img1,
+      live: "https://github.com/Davidleal1122/Kinaiya-Ecommerce",
+    },
+  ],
+  [
+    "02",
+    {
+      num: "02",
+      category: "Database",
+      title: "BiteLite Dental Clinic Appointment System",
+      description:
+        "The project application is a streamlined appointment management system focused on database development for dental clinics. Designed to optimize clinic operations, it provides an intuitive interface for managing patient, appointment, dentist, and treatment records. By leveraging efficient database structures, DentAssist minimizes record discrepancies and scheduling conflicts, enhancing overall workflow and operational efficiency.",
+      stack: [{ name: "MySQL, Java Swing" }],
+      image: Img2,
+      live: "https://github.com/Davidleal1122/BiteLite-Dental-Clinic-Appointment-System",
+    },
+  ],
+  [
+    "03",
+    {
+      num: "03",
+      category: "Website",
+      title: "Student Checklist Portal",
+      description:
+        "The Student Checklist Portal offers a clear view of enrolled subjects and completed grades. With a user-friendly interface and search feature, students can easily track academic progress and access records across their courses.",
+      stack: [{ name: "PHP" }, { name: "CSS Bootstrap" }],
+      image: Img3,
+      live: "https://github.com/Davidleal1122/Student-Checklist-Portal",
+    },
+  ],
+]);
+
+const Work = () => {
   return (
     <section className="section" id="work">
       <div className="container mx-auto">
