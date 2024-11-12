@@ -75,12 +75,12 @@ const About = () => {
             {/* Contact Button */}
             <div className='flex gap-x-8 items-center'>
               <Link
+                href='#contact'
                 to='contact'
                 smooth={true}
                 spy={true}
                 offset={-80}
-                className='btn btn-sm flex justify-center items-center cursor-pointer'
-              >
+                className='btn btn-sm flex justify-center items-center cursor-pointer'>
                 Contact me
               </Link>
             </div>

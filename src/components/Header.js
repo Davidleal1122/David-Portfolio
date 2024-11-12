@@ -14,7 +14,8 @@ const Header = () => {
             <img src={Logo} alt='Logo' />
           </a>
           {/* Work with me Button */}
-          <Link 
+          <Link
+            href='#contact'
             to='contact'
             smooth={true}
             spy={true}
