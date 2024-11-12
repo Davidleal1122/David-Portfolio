@@ -13,41 +13,44 @@ const Nav = () => {
         <div className='w-full bg-black/20 h-[80px] backdrop-blur-2xl rounded-full max-w-[400px] mx-auto px-5 flex justify-between items-center text-2xl text-white/50'>
           <Link
             to='home'
-            href='#home' // Added href for crawlability
             activeClass='active'
             smooth={true}
             spy={true}
             offset={-200}
+            href='#home' // Added href for crawlability
             className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center bg-transparent hover:bg-white/20 rounded-full transition duration-300'
           >
             <BiHomeAlt />
           </Link>
           <Link
             to='about'
-            href='#about' // Added href for crawlability
             activeClass='active'
             smooth={true}
             spy={true}
+            offset={20}
+            href='#about' // Added href for crawlability
             className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center bg-transparent hover:bg-white/20 rounded-full transition duration-300'
           >
             <BsClipboardData />
           </Link>
           <Link
             to='work'
-            href='#work' // Added href for crawlability
             activeClass='active'
             smooth={true}
             spy={true}
+            offset={-40}
+            href='#work' // Added href for crawlability
             className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center bg-transparent hover:bg-white/20 rounded-full transition duration-300'
           >
             <BsBriefcase />
           </Link>
           <Link
             to='contact'
-            href='#contact' // Added href for crawlability
             activeClass='active'
             smooth={true}
             spy={true}
+            offset={20}
+            href='#contact' // Added href for crawlability
             className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center bg-transparent hover:bg-white/20 rounded-full transition duration-300'
           >
             <BsChatSquareText />

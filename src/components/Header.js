@@ -16,10 +16,10 @@ const Header = () => {
           {/* Work with me Button */}
           <Link
             to='contact'
-            href='#contact' // Added href for crawlability
             smooth={true}
             spy={true}
             offset={-80} // Optional: adjust offset if needed
+            href='#contact' // Added href for crawlability
             className='btn btn-sm flex justify-center items-center cursor-pointer'
           >
             Work with me
